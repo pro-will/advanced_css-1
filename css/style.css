@@ -28,26 +28,26 @@ p{
   text-align:center;
 }
 
-div img{
+.grid img{
     width:150px;
     height: 150px;
     display:block;
     margin:auto;
 }
 
-div{
+.grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
-div figure {
+.grid figure {
         border: 1px solid #333;
         padding: 5px;
         text-align: center;
     }
 
-div figure img {
+.grid figure img {
     width: 100%;
     height: auto;
 }
@@ -55,7 +55,7 @@ div figure img {
 /* Tablet view */
 
 @media screen and (min-width: 772px) {
-    div {
+    .grid {
         grid-template-columns: repeat(2, 1fr); /* two columns */
     }
     
@@ -63,22 +63,22 @@ div figure img {
         border-radius: 50%; /* circular shape */
     }
 
-    div figure img:last-child  {
+    .grid figure img:last-child  {
         grid-column: 2;
     }
 }
 
 /* large screen view(≥ 992px) */
 @media screen and (min-width: 992px) {
-     div {
+     .grid {
         grid-template-columns: repeat(2, 1fr); /* still two columns */
      }
 
-     div figure img:nth-child(3n) {
+     .grid figure img:nth-child(3n) {
         grid-column: span 2; /* every third image span two columns */
      }
 
-     div figure img {
+     .grid figure img {
         border-radius: 0; /* remove circular shape */
      }
     
