@@ -59,7 +59,7 @@ div figure img {
         grid-template-columns: repeat(2, 1fr); /* two columns */
     }
     
-    div figure img {
+    .grid figure img {
         border-radius: 50%; /* circular shape */
     }
 
