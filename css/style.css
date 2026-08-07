@@ -41,13 +41,13 @@ div{
   gap: 10px;
 }
 
-figure {
+div figure {
         border: 1px solid #333;
         padding: 5px;
         text-align: center;
     }
 
-figure img {
+div figure img {
     width: 100%;
     height: auto;
 }
@@ -59,7 +59,7 @@ figure img {
         grid-template-columns: repeat(2, 1fr); /* two columns */
     }
     
-    figure {
+    div figure img {
         border-radius: 50%; /* circular shape */
     }
 
@@ -78,7 +78,7 @@ figure img {
         grid-column: span 2; /* every third image span two columns */
      }
 
-     figure {
+     div figure img {
         border-radius: 0; /* remove circular shape */
      }
     
